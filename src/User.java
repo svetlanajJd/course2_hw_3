@@ -48,9 +48,9 @@ public class User {
         User loginPasswordConfirmPassword = new User(login, password, confirmPassword);
         try {
             check(loginPasswordConfirmPassword);
-        } catch (WrongLoginException i) {
+        } catch (WrongLoginException e) {
             System.out.println("количество символов в логине превышает допустимое значение");
-        } catch (WrongPasswordException i) {
+        } catch (WrongPasswordException e) {
             System.out.println("пароли должны совпадать");
         }
     }
