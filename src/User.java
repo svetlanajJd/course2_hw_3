@@ -1,5 +1,4 @@
 public class User {
-
     private static String login;
     private static String password;
     private static String confirmPassword;
